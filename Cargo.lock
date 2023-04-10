@@ -65,7 +65,7 @@ checksum = "a4a4ddaa51a5bc52a6948f74c06d20aaaddb71924eab79b8c97a8c556e942d6a"
 
 [[package]]
 name = "bash-gpt"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "chatgpt_rs",
  "clap",

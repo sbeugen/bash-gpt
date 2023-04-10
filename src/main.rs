@@ -14,7 +14,7 @@ async fn main() {
 
     let mut query = format!(
         "Provide the bash command for doing: {}",
-        args.query
+        args.query.join(" ")
     );
 
     if args.verbose {
