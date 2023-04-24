@@ -13,8 +13,8 @@ This will produce the binary `bash-gpt` in the directory `/target/release`.
 
 ## API-Key
 
-You need to provide an Open AI API key via the env variable `OPEN_AI_API_KEY`
-You can also use an dotenv (`.env`) file.
+You need to provide an Open AI API key via the env variable `OPENAI_API_KEY`
+You can also use a dotenv (`.env`) file.
 
 ```bash
 $ cp example.env .env # then edit the file
