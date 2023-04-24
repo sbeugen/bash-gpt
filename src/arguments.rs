@@ -1,7 +1,7 @@
 use clap::Parser;
 
 /// Program to get Bash command by providing a prompt in natural language
-/// It expects the environment variable OPEN_AI_API_KEY to be set
+/// It expects the environment variable OPENAI_API_KEY to be set
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None, trailing_var_arg=true)]
 pub struct Arguments {
