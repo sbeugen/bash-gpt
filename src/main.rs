@@ -2,9 +2,12 @@ mod arguments;
 mod gpt_fetch;
 
 use std::env;
+use dotenv::dotenv;
 
 #[tokio::main]
 async fn main() {
+    dotenv().ok(); // This line loads the environment variables from the ".env" file.
+
     const OPEN_AI_API_KEY: &str = "OPEN_AI_API_KEY";
     let api_key = env::var(OPEN_AI_API_KEY).expect(&format!(
         "Environment variable {} has to be set",

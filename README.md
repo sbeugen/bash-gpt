@@ -4,16 +4,28 @@ This is a small program for finding a Bash command by explaining what you want t
 It will send the provided query to Open AI's ChatGPT and print the result.
 
 ## Build
-`cargo build -r`  
+
+```
+$ cargo build -r
+```
+
 This will produce the binary `bash-gpt` in the directory `/target/release`.
 
 ## API-Key
+
 You need to provide an Open AI API key via the env variable `OPEN_AI_API_KEY`
+You can also use an dotenv (`.env`) file.
+
+```bash
+$ cp example.env .env # then edit the file
+```
 
 ## Run with arguments
+
 - `--verbose` or `-v` - verbose mode will print explanations for the provided command
 
 ## Examples
+
 1. Command: `bash-gpt find all files where the name contains foo`  
 Output: `find . -name "*foo*" -type f`
 2. Command: `bash-gpt -v reset git branch to commit`  
