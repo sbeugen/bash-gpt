@@ -9,4 +9,4 @@ edition = "2021"
 chatgpt_rs = "1.1.1"
 clap = { version = "4.2.1", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
-
+dotenv = "0.15.0"
